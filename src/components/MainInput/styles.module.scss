@@ -1,0 +1,57 @@
+.label {
+  text-align: left;
+  width: 100%;
+  margin: 1ex 0;
+  font-size: 1.2em;
+}
+.container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 1rem;
+  background: white;
+  width: 100%;
+  border: 1px solid #E0E0E0;
+  .chat {
+    border: none;
+    outline: none;
+    resize: none;
+    background: transparent;
+    width: 100%;
+    padding: 0 1ex;
+    max-height: 200px;
+    color: black;
+  }
+}
+.sampleInputsContainer {
+  margin: 1ex 0;
+  width: 100%;
+  .sampleInputsLabel {
+    text-align: left;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .sampleInputs {
+    margin: 1ex;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1ex;
+    & > * {
+      font-weight: bold;
+      text-align: center;
+      padding: 1ex 2ex;
+      border: 1px solid grey;
+      border-radius: 1ex;
+      font-size: 0.9rem;
+      text-wrap: nowrap;
+      cursor: pointer;
+      transition: 0.1s ease;
+      opacity: 0.5;
+      &:hover {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+    }
+  }
+}

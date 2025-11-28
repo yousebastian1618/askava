@@ -1,17 +1,31 @@
 .container {
   height: 100%;
   box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+  padding: 0 1rem;
+  width: fit-content;
   .sidebarTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
     .logoContainer {
       position: relative;
       aspect-ratio: 1;
-      width: 2rem;
+      width: 1.5rem;
       .logo {
         object-fit: contain;
+        cursor: pointer;
+        transition: 0.1s ease;
+        &:hover {
+          transform: scale(1.05);
+        }
       }
+    }
+    .shrunkIcon {
+      font-size: 1.5rem;
     }
   }
   .options {
-
+    padding: 2rem 0;
   }
 }

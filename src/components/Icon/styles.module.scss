@@ -1,0 +1,15 @@
+.container {
+  position: relative;
+  .tooltip {
+    position: absolute;
+    font-size: 0.8rem;
+    text-wrap: nowrap;
+    padding: 1px 2px;
+    color: black;
+    border-radius: 1rem;
+    font-weight: bold;
+    background-color: yellow;
+    z-index: 1000;
+
+  }
+}
