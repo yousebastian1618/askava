@@ -45,7 +45,7 @@ export default function MainInput({ label, sampleInputs }: Props) {
           <div className={styles.sampleInputs}>
             {sampleInputs.map((item, i) => {
               return (
-                <span key={i} className={styles.sampleInput}>{item}</span>
+                <span key={i} className={styles.sampleInput} onClick={() => setValue(item)}>{item}</span>
               )
             })}
           </div>
