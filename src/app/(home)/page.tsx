@@ -8,9 +8,7 @@ import {sampleJobTitles} from "@/objects/objects";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div className={styles.sidebar}>
-        <Sidebar />
-      </div>
+      <Sidebar />
       <div className={styles.mainContainer}>
         <div className={styles.main}>
           <TypingText text={"Hi, I'm Ava, your interview assistant"} className={styles.mainTitle} />

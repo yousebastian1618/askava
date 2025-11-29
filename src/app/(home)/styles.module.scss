@@ -2,7 +2,6 @@
   display: flex;
   width: 100vw;
   height: 100vh;
-
   .sidebar {
   }
 
@@ -13,7 +12,7 @@
       background-color: #2B2B2B;
     }
     .main {
-      width: 60%;
+      width: 40%;
       display: flex;
       flex-direction: column;
       align-items: center;

@@ -1,9 +1,15 @@
 .container {
   display: flex;
   align-items: center;
+  cursor: pointer;
+  padding: 1ex;
+  transition: 0.1s ease;
+  border-radius: 1rem;
+  &:hover {
+    box-shadow: var(--main-color) 0 0 0 1px;
+  }
   .icon {
     font-size: 1.5rem;
-    margin-right: 5px;
   }
   .label {
     text-wrap: nowrap;
