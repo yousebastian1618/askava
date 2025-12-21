@@ -1,0 +1,14 @@
+.icon-container {
+  position: relative;
+  .tooltip {
+    position: absolute;
+    border: 1px solid var(--foreground);
+    border-radius: 1rex;
+    padding: 0 3px;
+    left: -50%;
+    font-weight: bold;
+    background-color: var(--foreground);
+    color: white;
+    font-size: 14px;
+  }
+}

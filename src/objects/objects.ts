@@ -3,7 +3,8 @@ import {
   PanelRight,
   MessageSquarePlus,
   MessageSquareHeart,
-  Settings
+  Settings,
+  BookType
 } from 'lucide-react';
 
 export const IconMap = {
@@ -11,7 +12,8 @@ export const IconMap = {
   "panel-left": PanelLeft,
   "new-chat": MessageSquarePlus,
   "discover": MessageSquareHeart,
-  "settings": Settings
+  "settings": Settings,
+  'flashcards': BookType
 }
 
 export const SidebarItems = [
@@ -20,9 +22,9 @@ export const SidebarItems = [
     label: 'New Chat'
   },
   {
-    icon: "discover",
-    label: 'Discover'
-  }
+    icon: 'flashcards',
+    label: 'Generate Flashcards'
+  },
 ]
 
 export const SidebarBottomItems = [
@@ -30,4 +32,15 @@ export const SidebarBottomItems = [
     icon: 'settings',
     label: 'Settings'
   }
+]
+
+export const sampleJobTitles = [
+  'Frontend Engineer',
+  'Account Analyst',
+  'Civil Engineer',
+  'Librarian',
+  'Design Engineer',
+  'Dental Hygienist',
+  'Web Developer II',
+  'Director of Sales'
 ]

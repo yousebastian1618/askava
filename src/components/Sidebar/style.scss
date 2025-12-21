@@ -1,0 +1,45 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  background-color: var(--foreground1);
+  border-right: 1px solid var(--border-line-color);
+  box-shadow: 1px 0 4px rgba(0, 0, 0, 0.04);
+  .sidebar-top-container {
+    .sidebar-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .askava-logo-container {
+        position: relative;
+        aspect-ratio: 1;
+        width: 2rem;
+        #askava-logo {
+          object-fit: contain;
+          cursor: pointer;
+          transition: 0.1s ease;
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+    .sidebar-body {
+      margin: 2rem 0;
+    }
+  }
+}
+.sidebar-items {
+  & > * {
+    display: flex;
+    align-items: center;
+    gap: 1ex;
+    cursor: pointer;
+    padding: 1ex;
+    &:hover {
+      box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+      background-color: var(--foreground2);
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.main-input-container {
+  width: min(640px, 100%);
+  .main-input-question {
+    padding: 0.5ex;
+    font-weight: 500;
+  }
+  .main-input {
+    width: 100%;
+    background-color: white;
+    border: 1px solid var(--foreground2, #d0d5db);
+    padding: 12px 16px;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .sample-inputs {
+    margin: 1ex;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1ex;
+    & > * {
+      font-weight: bold;
+      text-align: center;
+      padding: 1ex 2ex;
+      border: 1px solid grey;
+      border-radius: 1ex;
+      font-size: 0.9rem;
+      text-wrap: nowrap;
+      cursor: pointer;
+      transition: 0.1s ease;
+      opacity: 0.5;
+      &:hover {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+    }
+  }
+}
+
