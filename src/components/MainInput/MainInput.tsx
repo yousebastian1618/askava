@@ -1,6 +1,6 @@
 'use client'
 import './style.scss';
-import {useState} from "react";
+import {useEffect, useRef, useState} from "react";
 
 type Props = {
   question?: string;
@@ -10,6 +10,23 @@ type Props = {
 export default function MainInput({ question, sampleInputs }: Props) {
 
   const [mainInput, setMainInput] = useState('');
+
+  const inputRef = useRef(mainInput);
+
+  useEffect(() => {
+    inputRef.current = mainInput;
+  }, [mainInput]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Enter') {
+        if (inputRef.current === '') return;
+        console.log(inputRef.current);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   return (
     <div className={'main-input-container'}>
