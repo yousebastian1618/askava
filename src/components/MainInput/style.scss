@@ -19,7 +19,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1ex;
-    & > * {
+    .sample-input {
       font-weight: bold;
       text-align: center;
       padding: 1ex 2ex;
