@@ -1,0 +1,10 @@
+.home-page {
+  display: flex;
+  min-height: 100vh;
+  max-width: 100vw;
+  .sidebar-container {
+  }
+  .main-page-container {
+    width: 100%;
+  }
+}
