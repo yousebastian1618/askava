@@ -14,7 +14,7 @@ export default function Sidebar() {
 
   return (
     <div className={'sidebar'}
-         style={{ width: shrunk ? '' : '15rem'}}
+         style={{ width: shrunk ? '' : '18rem'}}
     >
       <div className={'top'}>
         <div className={'logo-container'}>

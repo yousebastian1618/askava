@@ -2,11 +2,16 @@
 
 :root {
   --background: #aed385;
-  --foreground: #0e181e;
+  /*--foreground: #0e181e;*/
+  --foreground: #6b6255;
   --color1: #aed385;
   --color2: #ffeedc;
   --darkColor1: #0e181e;
   --darkColor2: #4ff7b2;
+
+  --mainColor: #faf3ea;
+  --sidebarColor: #f7efe3;
+  --fontColor: #6b6255;
 }
 
 @theme inline {
@@ -18,8 +23,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0e181e;
+    --foreground: #6b6255;
   }
 }
 
